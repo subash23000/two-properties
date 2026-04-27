@@ -1,1 +1,1 @@
-"C:\Program Files (x86)\Java\jdk1.7.0_80\bin\javac" -classpath ..\lib\ev3classes.jar .\app\*.java .\data\*.java .\threads\*.java
+"C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin\javac" -classpath "..\lib\ev3classes.jar" ..\src\app\*.java ..\src\data\*.java ..\src\threads\*.java -d .

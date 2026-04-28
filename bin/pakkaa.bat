@@ -1,1 +1,1 @@
-"C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin\jar" -cfe legoapp.jar app.LegoApp app data threads
+"C:\Program Files\Java\jdk1.7.0_80\bin\javac" -source 1.7 -target 1.7 -classpath "..\lib\ev3classes.jar" ..\src\app\*.java ..\src\data\*.java ..\src\threads\*.java -d .

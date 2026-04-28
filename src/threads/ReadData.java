@@ -43,6 +43,7 @@ public class ReadData implements Runnable{
 				isr = new InputStreamReader(is);
 	      		br=new BufferedReader(isr);
 				while ((s=br.readLine())!=null){
+					System.out.println("Got: " + s); //Test
 					String [] values=s.split("#");
 					Robot.setId(values[0]);
 					Robot.setRun(values[1]);

@@ -24,7 +24,7 @@ public class ReadData implements Runnable{
 	public void run() {
 		while (Robot.getRun()==1) {
 			try {
-				Thread.sleep(1);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -39,6 +39,9 @@ public class ReadData implements Runnable{
 		  			System.out.println("Exception conn.getInputSteam()");
 		  			e.printStackTrace();
 		            System.out.println("Cannot get InputStream!");
+				}
+				if (is==null) {
+		  			continue;
 				}
 				isr = new InputStreamReader(is);
 	      		br=new BufferedReader(isr);

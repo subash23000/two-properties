@@ -38,9 +38,9 @@ public class ReadData implements Runnable{
 					is=conn.getInputStream();
 				}
 				catch (Exception e) {
-		  			System.out.println("Exception conn.getInputSteam()");
+		  			System.out.println("Cannot connect to server!");
 		  			e.printStackTrace();
-		            System.out.println("Cannot get InputStream!");
+		            continue;
 				}
 				isr = new InputStreamReader(is);
 	      		br=new BufferedReader(isr);

@@ -3,7 +3,7 @@ package data;
 
 public class Robot {
 	private static int id;
-	private static int speed;
+	private static int speed = 40;
 	private static int turn;
 	private static int run=1;
 	
@@ -26,6 +26,7 @@ public class Robot {
 		return speed;
 	}
 	public static int turnRight() {//Slower Right Motor
+		if (speed == 0) return 0;
 		if (turn<0) {
 			return speed+turn;
 		}
@@ -35,6 +36,7 @@ public class Robot {
 		
 	}
 	public static int turnLeft() {//Slower Left motor
+		if (speed == 0) return 0;
 		if (turn>0) {
 			return speed-turn;
 		}

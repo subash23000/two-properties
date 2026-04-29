@@ -22,7 +22,7 @@ public class ReadData implements Runnable{
 
 	@Override
 	public void run() {
-		while (Robot.getRun()==1) {
+		while (true) {
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {

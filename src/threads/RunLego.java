@@ -12,15 +12,18 @@ public class RunLego implements Runnable{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		while (Robot.getRun()==1) {
+		while (true) {
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			motorA.setPower(Robot.turnRight());
-			motorB.setPower(Robot.turnLeft());
-		}
+			if (Robot.getRun()==1) {
+				motorA.setPower(Robot.turnRight());
+				motorB.setPower(Robot.turnLeft());
+			} else {
+				motorA.setPower(0);
+				motorB.setPower(0);
+			}	
 	}
-
 }

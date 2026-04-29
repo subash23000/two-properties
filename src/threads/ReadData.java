@@ -24,7 +24,7 @@ public class ReadData implements Runnable{
 	public void run() {
 		while (Robot.getRun()==1) {
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

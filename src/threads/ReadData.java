@@ -31,6 +31,8 @@ public class ReadData implements Runnable{
 			try {
 				url = new URL("http://10.22.16.206:8080/rest/lego/getvalues");
 				conn = (HttpURLConnection)url.openConnection();
+				conn.setConnectTimeout(3000);
+   				conn.setReadTimeout(3000);
 				InputStream is=null;
 				try {
 					is=conn.getInputStream();

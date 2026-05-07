@@ -5,7 +5,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class SendData implements Runnable {
-
+ // sends robot data to REST
     public void run() {
         while (true) {
             try {

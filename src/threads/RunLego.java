@@ -15,7 +15,7 @@ public class RunLego implements Runnable{
 	EV3UltrasonicSensor sonic = new EV3UltrasonicSensor(SensorPort.S1);
 	SampleProvider distance = sonic.getDistanceMode();
 	float[] sample = new float[distance.sampleSize()];
-
+// controls the movement of the robot
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub

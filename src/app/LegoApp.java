@@ -16,9 +16,7 @@ public class LegoApp {
 
 		Thread runLegoThread=new Thread(runLego);
 		Thread readDataThread=new Thread(readData);
-		Thread sendDataThread=new Thread(sendData);
 		runLegoThread.start(); //Saikeen kaynnistys
 		readDataThread.start(); //Virtuaalikone aloittaa saikeen kun ehtii
-		sendDataThread.start(); // Start the thread to send data to the server
 	}
 }

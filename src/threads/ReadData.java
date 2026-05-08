@@ -20,6 +20,7 @@ public class ReadData implements Runnable{
 
 	String s=null;
 
+	// reads robot data from REST server and updates the Robot class with the new values
 	@Override
 	public void run() {
 		while (true) {
@@ -29,6 +30,7 @@ public class ReadData implements Runnable{
 				e.printStackTrace();
 			}
 			try {
+				// connect to REST server, request robot data from this url and read the response, then update the Robot class with the new values
 				url = new URL("http://10.22.16.206:8080/rest/lego/getvalues");
 				conn = (HttpURLConnection)url.openConnection();
 				conn.setConnectTimeout(3000);
